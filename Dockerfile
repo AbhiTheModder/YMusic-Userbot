@@ -5,4 +5,4 @@ RUN apt-get -qq update && apt-get -qq install -y git wget ffmpeg mediainfo \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 RUN pip install -r requirements.txt
-CMD ["gunicorn", "app:app", "&&", "python", "-m", "YMusic"]
+CMD ["bash", "cloud.sh"]
