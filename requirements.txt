@@ -5,3 +5,5 @@ tgcrypto
 youtube-search-python
 speedtest-cli
 ffprobe
+flask
+gunicorn
